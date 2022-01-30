@@ -1,0 +1,45 @@
+body {
+    font-size: 1.5em;
+}
+#calculator {
+    width: 256px;
+    border: solid 2px ;
+}
+button {
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    background-color: #b6bac7;
+    border:solid rgb(118, 118, 118);
+    border-style: inset;
+}
+
+button:active {
+    border-style: outset;
+    transform: translateY(2px);
+}
+
+#pad {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a2023;
+}
+
+#num, #operators {
+    display: grid;
+}
+
+#num {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#operators {
+    grid-template-columns: 1fr 1fr;
+}
+
+#display {
+    text-align: right;
+    border: 24px #444a5a solid;
+    height: 32px;
+    font-size: 1.2em;
+}
