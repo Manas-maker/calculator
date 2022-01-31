@@ -33,6 +33,14 @@ function takeInputOperator(bPointer) {
         if (b=='=') {
             display.textContent = operate(opp, Number(num1), Number(num2));
             num1 = display.textContent;
+            num2='';
+            stat = 2;
+        }
+        else if (stat==2) {
+            display.textContent = '';
+            num1 = operate(opp, Number(num1), Number(num2));
+            num2='';
+            stat = 2;
         }
         else {
             display.textContent = '';
