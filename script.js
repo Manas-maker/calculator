@@ -56,6 +56,8 @@ function operate(operator, a, b) {
         case '-':
             return a - b;
         case '*':
+        case 'x':
+        case 'X':
             return a * b;
         case '/':
             return a / b;
