@@ -1,17 +1,29 @@
 body {
     font-size: 1.5em;
+    display: flex;
+    height: 100vh;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
 }
 #calculator {
-    width: 256px;
+    width: 512px;
+    height: 512px;
     border: solid 2px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    font-family: monospace;
+    
 }
 button {
-    width: 32px;
-    height: 32px;
+    font-size: 1.5em;
+    width: 80px;
     margin: 8px;
     background-color: #b6bac7;
     border:solid rgb(118, 118, 118);
     border-style: inset;
+    font-family: inherit;
 }
 
 button:active {
@@ -23,6 +35,7 @@ button:active {
     display: flex;
     justify-content: space-between;
     background-color: #1a2023;
+    height: inherit;
 }
 
 #num, #operators {
@@ -41,12 +54,11 @@ button:active {
 .operator {
     margin: 2px 8px;
     height: auto;
-    font-size: large;
 }
 
 #display {
     text-align: right;
     border: 24px #444a5a solid;
-    height: 32px;
-    font-size: 1.2em;
+    height: 48px;
+    font-size: 1.5em;
 }
